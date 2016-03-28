@@ -1,0 +1,123 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+<!-- 	<ui:with type="fr.nations.amen.client.eglise.visionpublic.MenuEgliseVision.Resources" -->
+<!-- 		field="resources" /> -->
+	<ui:style>
+			.header {
+			font-size: 110%;
+			font-weight: bold;
+			color: #555
+		}
+		.content {
+			background: #FFFFFF;
+		}
+		
+		.menuPanel {
+			margin: 10px 0;
+		}
+			.label {
+			font-weight: bold;
+		}
+		.toolbar {
+			background: #d9e7f8;
+			width: 100%;
+			margin: 5px 0;
+			padding: 5px;
+		}
+				.col{
+ border-width:0px;
+ border-style:solid; 
+ border-color:black;
+
+	}
+	
+	.center{
+	margin: auto
+
+	}
+	</ui:style>
+	
+<g:HTMLPanel>
+				<table>
+					<tr>
+						<td>
+							<g:HTMLPanel>
+								<table>
+<!-- 									<tr> -->
+<!-- 										<td colspan='2' align='center' class='{style.header}'> -->
+<!-- 											<ui:msg key='MenuEgliseManagerFormTitle'>Message Video</ui:msg> -->
+<!-- 										</td> -->
+<!-- 										<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
+<!-- 									</tr> -->
+									
+<!-- 									<tr> -->
+<!-- 										<td class='{style.label}'> -->
+<!-- 											<ui:msg key='MenuEgliseManagerFormIdName'>Numéro:</ui:msg> -->
+<!-- 										</td> -->
+<!-- 										<td> -->
+<!-- 											<g:HTML ui:field='idNumberBox' /> -->
+<!-- 										</td> -->
+<!-- 										<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
+<!-- 									</tr> -->
+<!-- 									<tr> -->
+<!-- 										<td class='{style.label}'> -->
+<!-- 											<ui:msg key='MenuEgliseManagerFormAppellation'>Sujet:</ui:msg> -->
+<!-- 										</td> -->
+<!-- 										<td> -->
+<!-- 											<g:HTML ui:field='appellationBox' /> -->
+<!-- 										</td> -->
+<!-- 										<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
+<!-- 									</tr> -->
+<!-- 									<tr> -->
+<!-- 										<td class='{style.label}'> -->
+<!-- 											<ui:msg key='MenuEgliseManagerFormDateActu'>Date:</ui:msg> -->
+<!-- 										</td> -->
+<!-- 										<td> -->
+<!-- 											<g:HTML ui:field='dateMenuEgliseBox' /> -->
+<!-- 										</td> -->
+<!-- 										<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
+<!-- 									</tr> -->
+<tr>
+										<td class='{style.label}'>
+<!-- 											<ui:msg key='MenuEgliseManagerFormDescription'></ui:msg> -->
+										</td>
+										<td class='{style.col}'>
+											<g:HTML ui:field='descriptionBox' />
+											
+									</td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									</tr>
+									
+									<tr>
+										<td colspan='2' align='center' class='{style.center}'>
+											<g:VerticalPanel ui:field='photoAreaBox' />
+											
+										</td>
+										<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									</tr>
+									
+									<tr>
+												<td>
+												</td>
+												<td>
+													<center>
+														<g:Frame height="700px" width="900px" ui:field='iframePdf'></g:Frame>
+													</center>
+												</td>
+											</tr>
+
+									
+								</table>
+							
+							</g:HTMLPanel>
+						</td>
+					</tr>
+				</table>
+
+			</g:HTMLPanel>
+
+	
+	
+</ui:UiBinder>

@@ -1,0 +1,29 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+		<g:DockLayoutPanel unit="EM" width="200px" height="400px">
+			<g:north size="2.2">
+				<g:Label>Clique sur le bouton de ton choix :</g:Label>
+			</g:north>
+			<g:west size="3.2">
+				<g:SimplePanel/>
+			</g:west>
+			<g:east size="3.2">
+				<g:SimplePanel/>
+			</g:east>
+			<g:center>
+				<g:VerticalPanel>
+					<g:Button ui:field="btnCellActu">Gestion des Actualités</g:Button>
+					<g:Button ui:field="btnCellSouvenirs">Gestion des Souvenirs</g:Button>
+					<g:Button ui:field="btnCellForumPasteur">Gestion du Forum du Pasteur</g:Button>
+<!-- 					<g:Button ui:field="btnAnimation">Gestion des images de l'animantion</g:Button> -->
+				</g:VerticalPanel>
+			</g:center>
+		</g:DockLayoutPanel>
+		
+</ui:UiBinder> 

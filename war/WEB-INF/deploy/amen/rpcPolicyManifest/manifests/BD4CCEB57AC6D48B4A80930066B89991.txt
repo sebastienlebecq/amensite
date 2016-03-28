@@ -1,0 +1,2 @@
+serviceClass: fr.nations.amen.shared.temoignages.TemoignagesService
+path: 75741067EC933755ED2F46E4F561908B.gwt.rpc

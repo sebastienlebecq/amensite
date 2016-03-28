@@ -1,0 +1,77 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
+
+<html xmlns:og="http://ogp.me/ns#" itemscope itemtype="http://schema.org/Organization">
+<!-- <html xmlns:og="http://ogp.me/ns#" itemscope itemtype="http://schema.org/Organization"> -->
+  <head>
+  
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  	<meta itemprop="name" content="Amen web app">
+    <meta itemprop="description" content="Site web de la mission chrétienne Amen, de saint michel sur orge 91, louant  l esprit saint et l amour de dieu et de son prochain">
+	<meta itemprop="image" content="images/sigleAmen.png">
+<!-- 	<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script> -->
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="Amen.css">
+	<!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    <title>Mission Chretienne AMEN</title>
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script type="text/javascript" language="javascript" src="amen/amen.nocache.js"></script>
+<!--     <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script> -->
+<!-- <script src="/js/jquery.js"></script> -->
+<!-- <script src="/js/mediaelement-and-player.min.js"></script> -->
+<!-- <link rel="stylesheet" href="/js/mediaelementplayer.css" /> -->
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body bgcolor="silver">
+  
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '401100423399950',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543bd3506b7f749a" async></script> -->
+
+    <!-- OPTIONAL: include this if you want history support -->
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+    
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+
+  </body>
+</html>

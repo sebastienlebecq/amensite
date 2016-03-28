@@ -1,0 +1,2 @@
+serviceClass: fr.nations.amen.shared.souvenirs.SouvenirsService
+path: A5402079F8D5A79C3909E10999CBE413.gwt.rpc

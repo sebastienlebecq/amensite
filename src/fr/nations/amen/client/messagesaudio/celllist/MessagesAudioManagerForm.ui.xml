@@ -1,0 +1,170 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:d='urn:import:com.google.gwt.user.datepicker.client' xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		
+		.header {
+			font-size: 110%;
+			font-weight: bold;
+			color: #555
+		}
+		
+		.label {
+			font-weight: bold;
+		}
+		
+		.textricharea {
+			background-color: #FFFFFF;
+		}
+		
+		.colfusion {
+			
+		}
+	</ui:style>
+
+	<g:HTMLPanel>
+		<table>
+			<tr>
+				<td colspan='2' align='center' class='{style.header}'>
+					<ui:msg key='souvenirManagerFormTitle'>Message audio :</ui:msg>
+				</td>
+			</tr>
+			<tr>
+				<td class='{style.label}'>
+					<ui:msg key='souvenirManagerFormIdName'>Numéro</ui:msg>
+				</td>
+				<td>
+					<g:TextBox ui:field='idNumberBox' />
+				</td>
+			</tr>
+
+			<tr>
+				<td class='{style.label}'>
+					<g:HorizontalPanel>
+						<g:HTML>
+						<ui:msg key='souvenirManagerFormCategories'>Catégorie :</ui:msg>
+						</g:HTML>
+						<g:ListBox ui:field="categories"></g:ListBox>
+					</g:HorizontalPanel>
+
+				</td>
+			</tr>
+
+
+			<tr>
+				<td colspan="2">
+					<g:HTMLPanel>
+
+						<g:FormPanel ui:field="docForm">
+							<g:HTMLPanel ui:field="panelUpload">
+								<br>
+									Convertion de Mp3, Ogg, Wav depuis le site: 
+									<a href="http://media.io/fr/">http://media.io/fr/</a>
+								</br>
+								<br>
+									Blob Key:
+									<g:TextBox ui:field="blobKey"></g:TextBox>
+									File(Mp3):
+									<g:FileUpload ui:field="upload"></g:FileUpload>
+								</br>
+
+								<br>
+									Blob Key:
+									<g:TextBox ui:field="blobKey1"></g:TextBox>
+									File(ogg):
+									<g:FileUpload ui:field="uploadogg"></g:FileUpload>
+								</br>
+								<br>
+									Blob Key:
+									<g:TextBox ui:field="blobKey2"></g:TextBox>
+									File(wav):
+									<g:FileUpload ui:field="uploadedwav"></g:FileUpload>
+									<g:SubmitButton ui:field="btnSubmit">Soumettre</g:SubmitButton>
+								</br>
+							</g:HTMLPanel>
+						</g:FormPanel>
+
+					</g:HTMLPanel>
+				</td>
+			</tr>
+
+			<tr>
+				<td class='{style.label}'>
+					<ui:msg key='souvenirManagerFormAppellation'>Sujet:</ui:msg>
+				</td>
+				<td>
+					<g:TextBox ui:field='appellationBox' />
+				</td>
+			</tr>
+			<tr>
+				<td class='{style.label}'>
+					<ui:msg key='souvenirManagerFormDateActu'>Date:</ui:msg>
+				</td>
+				<td>
+					<d:DateBox ui:field='dateSouvenirBox' />
+				</td>
+			</tr>
+			<tr>
+				<td class='{style.label}'>
+					<ui:msg key='souvenirManagerFormAlbumRefPicasa'>Référence(ID) de l'album photo:</ui:msg>
+			 <g:Button title="(cet ID est obtenu après l'enregistrement des photos dans l'album du
+              'souvenir' déclaré avec une visibilité public dans l'app web Picasa/Google+ :
+              partager en mode public > lien, l'ID est la dernière séquence)
+              Par exemple, dans l'adresse 'https://plus.google.com/photos/109657393844365040393
+              /albums/5919355111611156769?banner=pwa' l'ID de l'album est : 5919355111611156769">?</g:Button>
+				</td>
+				<td>
+					<g:TextBox ui:field='albumRefPicasaBox' />
+				</td>
+			</tr>
+			<tr>
+				<td class='{style.label}'>
+					<ui:msg key='souvenirManagerFormDescription'>Texte (à copier/coller depuis Word):</ui:msg>
+				</td>
+				<td>
+					<g:RichTextArea styleName="{style.textricharea}"
+						width="550px" height="300px" ui:field='descriptionBox' />
+				</td>
+			</tr>
+			<tr>
+				<td class='{style.label}'>
+					<ui:msg key='souvenirManagerFormRefYoutube'>Référence(ID) de la vidéo dans Youtube :</ui:msg>
+					<g:Button title="(cet ID est obtenu après l'enregistrement de la vidéo dans
+						Youtube)Par exemple, dans l'adressehttp://www.youtube.com/watch?v=V3P_BD8iFKA
+						l'ID de la vidéo est : V3P_BD8iFKA.L'ajout de plusieurs videos est possible en séparant
+						leur ID par un ';'">?</g:Button>
+				</td>
+				<td>
+					<g:TextBox ui:field='refYoutubeBox' />
+				</td>
+			</tr>
+		</table>
+		<hr>
+		</hr>
+		<table>
+			<tr>
+				<td colspan='2' align='center' class='{style.header}'>
+					<ui:msg key='souvenirManagerFormTitle2'>Actions dont vous disposez :</ui:msg>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<g:Button styleName="{style.important}" ui:field="btnAdd">Ajouter</g:Button>
+				</td>
+				<td>
+					<g:Button styleName="{style.important}" ui:field="btnRemove">Effacer</g:Button>
+				</td>
+				<td>
+					<g:Button styleName="{style.important}" ui:field="btnUpdate">Mise-à-jour</g:Button>
+				</td>
+			</tr>
+		</table>
+
+	</g:HTMLPanel>
+
+</ui:UiBinder> 

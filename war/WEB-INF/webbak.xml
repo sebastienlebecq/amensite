@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+<!--     <servlet> -->
+<!--     <servlet-name>indexForum</servlet-name> -->
+<!--     <servlet-class>fr.nations.amen.server.MessagesAmenServlet</servlet-class> -->
+<!--   </servlet> -->
+<!--     <servlet-mapping> -->
+<!--     <servlet-name>indexForum</servlet-name> -->
+<!--     <url-pattern>/indexForum</url-pattern> -->
+<!--   </servlet-mapping> -->
+  <!-- Default page to serve -->
+
+
+	<servlet>
+		<servlet-name>photoAlbumServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.PhotoAlbumServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>photoAlbumServlet</servlet-name>
+		<url-pattern>/amen/service</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>actuServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.evenements.ActualitesServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>actuServlet</servlet-name>
+		<url-pattern>/amen/serviceActu</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>amenAuthServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.evenements.LoginServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>amenAuthServlet</servlet-name>
+		<url-pattern>/amen/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>forumpasteurServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.forumpasteur.ForumPasteurServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>forumpasteurServlet</servlet-name>
+		<url-pattern>/amen/servicefp</url-pattern>
+	</servlet-mapping>
+	
+<!-- <security-constraint> -->
+<!--         <web-resource-collection> -->
+<!--             <url-pattern> -->
+<!--             /admin/* -->
+<!--             </url-pattern> -->
+<!--         </web-resource-collection> -->
+<!--         <auth-constraint> -->
+<!--             <role-name>admin</role-name> -->
+<!--         </auth-constraint> -->
+<!--     </security-constraint> -->
+
+  <welcome-file-list>
+    <welcome-file>Amen.html</welcome-file>
+  </welcome-file-list>
+</web-app>

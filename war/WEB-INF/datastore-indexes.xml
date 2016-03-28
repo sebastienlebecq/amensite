@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datastore-indexes autoGenerate="true">
+<datastore-index kind="LouangesEntry" ancestor="false" source="manual">
+        <property name="category" direction="asc"/>
+        <property name="numero" direction="asc"/>
+    </datastore-index>
+    <datastore-index kind="SouvenirEntry" ancestor="false" source="manual">
+        <property name="category" direction="asc"/>
+        <property name="appellation" direction="desc"/>
+    </datastore-index>
+    <datastore-index kind="MessageAudioEntry" ancestor="false" source="manual">
+        <property name="category" direction="asc"/>
+        <property name="dateActu" direction="desc"/>
+    </datastore-index>
+	
+	  <datastore-index kind="MenuEgliseEntry" ancestor="false" source="manual">
+        <property name="category" direction="asc"/>
+        <property name="dateActu" direction="desc"/>
+    </datastore-index>
+	 <datastore-index kind="TemoignageEntry" ancestor="false" source="manual">
+        <property name="category" direction="asc"/>
+        <property name="dateActu" direction="desc"/>
+    </datastore-index>
+</datastore-indexes>

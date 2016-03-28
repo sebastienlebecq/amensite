@@ -1,0 +1,5 @@
+package fr.nations.amen.client.mvp.presenters;
+
+public interface VisionPresenter  extends Presenter {
+
+}

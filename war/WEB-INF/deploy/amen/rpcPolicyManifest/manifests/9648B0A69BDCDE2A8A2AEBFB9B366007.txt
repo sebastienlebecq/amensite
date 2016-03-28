@@ -1,0 +1,2 @@
+serviceClass: fr.nations.amen.shared.conf.ConfigService
+path: A8CDE880CC85A664D96982ECC922F2BC.gwt.rpc

@@ -1,0 +1,145 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:with type="fr.nations.amen.client.historique.TabPanelExample2.Resources"
+		field="resources" />
+	<ui:style>
+		.content {
+			background: #FFFFFF;
+		}
+		
+		.menuPanel {
+			margin: 10px 0;
+		}
+		
+		.toolbar {
+			background: #d9e7f8;
+			width: 100%;
+			margin: 5px 0;
+			padding: 5px;
+		}
+	</ui:style>
+
+	<g:HTMLPanel styleName="{style.content}">
+
+		<!-- <g:HorizontalPanel styleName="{style.toolbar}"> -->
+		<!-- <g:Label text="L'Historique d'AMEN" /> -->
+		<!-- </g:HorizontalPanel> -->
+
+		<g:DecoratedTabPanel animationEnabled="true" ui:field="tabs" width="100%">
+			<g:Tab text='Notre Histoire'>
+				<g:VerticalPanel>
+					<g:HTMLPanel>
+
+						<p>
+							<g:Image resource="{resources.imgTitle}" />
+						</p>
+						<h2>
+							<span
+								style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif">
+								<g:Image resource="{resources.logo2009}" />
+								<strong>Chapitre 1 - (Juillet 2009-Octobre 2010) </strong>
+							</span>
+						</h2>
+						<p
+							style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size: 18px;">Une Cellule de prière commence au 42 Avenue Saint Saëns.
+							Elle va ensuite déménager  au 54 Avenue Saint Saëns.
+						</p>
+						<p>&nbsp;</p>
+						<h2>
+							<span
+								style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif">
+								<g:Image resource="{resources.logo2010}" />
+								Chapitre 2 – (Octobre 2010-Juin 2011)
+							</span>
+						</h2>
+						<p
+							style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size: 18px;">Naissance de l&rsquo;Eglise  Mission Chrétienne AM.E.N. </p>
+						<p
+							style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size: 18px;">L&rsquo;Eglise aménage au centre commercial Bois des Roches
+							(Siège social).
+						</p>
+						<p>&#13;
+						</p>
+						<h2> <g:Image resource="{resources.logo2011}" />Chapitre 3 – (Juillet 2011-) </h2>
+						<p
+							style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size: 18px;">Le Serviteur Narcisse KOUACOU devient  le Responsable de
+							l&rsquo;Eglise</p>
+
+
+					</g:HTMLPanel>
+				</g:VerticalPanel>
+			</g:Tab>
+			<g:Tab text='A propos...'>
+				<g:VerticalPanel>
+					<g:HTMLPanel>
+					<p><g:Image resource="{resources.imgAproposTitle}" /></p><div style="language:fr;margin-top:12.0pt;margin-bottom:0pt;margin-left:.56in;text-indent:-.56in;text-align:justify;text-justify:inter-ideograph;direction:ltr;unicode-bidi:embed;punctuation-wrap:hanging;"><span style="language:fr; font-family:'Trebuchet MS'; font-size:18.0pt; color:black; ">La Mission Chrétienne  AMEN est une </span><span style="font-family:'Trebuchet MS'; font-size:18.0pt; color:black; ">église </span><span style="font-family:'Trebuchet MS'; font-size:18.0pt; color:black; ">Protestante  Evangélique . </span></div>
+<div style="language:fr;margin-top:12.0pt;margin-bottom:0pt;margin-left:.56in;text-indent:-.56in;text-align:left;direction:ltr;unicode-bidi:embed;punctuation-wrap:hanging;"><span style="font-family:'Trebuchet MS'; font-size:18.0pt; color:black; ">Elle est une Association  Cultuelle (Loi 1901) déclarée le 15 Novembre 2010</span></div>
+<div style="language:fr;margin-top:12.0pt;margin-bottom:0pt;margin-left:.56in;text-indent:-.56in;text-align:left;direction:ltr;unicode-bidi:embed;punctuation-wrap:hanging;"><span style="font-family:'Trebuchet MS'; font-size:18.0pt; color:black; ">Elle est un lieu où des  ambassadeurs </span><span style="font-family:'Trebuchet MS'; font-size:18.0pt; color:black; ">de  Christ se réunissent </span><span style="font-family:'Trebuchet MS'; font-size:18.0pt; color:black; ">pour  célébrer et adorer Jésus-Christ et communier</span><span style="font-family:'Trebuchet MS'; font-size:18.0pt; color:black; "> </span><span style="font-family:'Trebuchet MS'; font-size:18.0pt; color:black; ">en  vue de leur Edification.</span></div>
+<div style="language:fr;margin-top:12.0pt;margin-bottom:0pt;margin-left:.56in;text-indent:-.56in;text-align:left;direction:ltr;unicode-bidi:embed;punctuation-wrap:hanging;"><span style="language:fr; font-family:'Trebuchet MS'; font-size:20.0pt; color:black; ">Elle a pour mission de:</span></div>
+<div style="language:fr;margin-top:6.0pt;margin-bottom:0pt;margin-left:.98in;text-indent:-.39in;text-align:left;direction:ltr;unicode-bidi:embed;punctuation-wrap:hanging;">
+  <ul>
+    <li><span style="font-family:'Trebuchet MS'; font-size:18.0pt; color:black; ">Proclamer la bonne  nouvelle du royaume de Dieu à toutes les nations (Matthieu 4.17; 28.18, Marc  1.15, Luc 4.43)</span></li>
+  </ul>
+</div>
+<div style="language:fr;margin-top:6.0pt;margin-bottom:0pt;margin-left:.98in;text-indent:-.49in;text-align:left;direction:ltr;unicode-bidi:embed;punctuation-wrap:hanging;">
+  <ul>
+    <li><span style="font-family:'Trebuchet MS'; font-size:20.0pt; color:black; ">Former</span><span style="font-family:'Trebuchet MS'; font-size:18.0pt; color:black; "> et préparer des  disciples et imitateurs de Jésus-Christ : des modèles pour les générations  présentes et futures.</span></li>
+  </ul>
+</div>
+<div style="language:fr;margin-top:12.0pt;margin-bottom:0pt;margin-left:.56in;text-indent:-.56in;text-align:left;direction:ltr;unicode-bidi:embed;punctuation-wrap:hanging;"><span style="font-family:'Trebuchet MS'; font-size:18.0pt; color:black; ">Notre vocation :</span><span style="font-family:'Trebuchet MS'; font-size:18.0pt; color:black; ">Voir les cœurs des  hommes revenir à Dieu et </span><span style="font-family:'Trebuchet MS'; font-size:18.0pt; color:black; ">des  enfants de Dieu s&rsquo;épanouir dans le plan de Dieu pour leurs vies </span><span style="font-family:'Trebuchet MS'; font-size:18.0pt; color:black; ">(2 Corinthiens 5.20,  Ephésiens 2.10</span><span style="font-family:'Trebuchet MS'; font-size:18.0pt; color:black; ">).</span></div>
+<p>&nbsp;</p>
+					</g:HTMLPanel>
+				</g:VerticalPanel>
+			</g:Tab>
+			
+			
+<!-- 			<g:ScrollPanel> -->
+			<g:Tab text='Organisation'>
+			 
+				<g:VerticalPanel>
+					<g:HTMLPanel>
+					<p><g:Image resource="{resources.imgOrganisation}" /></p>
+					</g:HTMLPanel>
+				</g:VerticalPanel>
+			</g:Tab>
+<!-- 			</g:ScrollPanel> -->
+				
+				
+			<g:Tab text='Notre Confession de Foi'>
+				<g:VerticalPanel>
+					<g:HTMLPanel>
+
+<p><g:Image resource="{resources.imgConfessionDeFoi}" /></p>
+
+<div><span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; color: #03F;">1.Nous croyons en Un Seul Dieu Eternel, Créateur de toutes choses,  existant en trois Personnes, le Père, le Fils et le Saint-Esprit.</span>  Marc 12:29&nbsp; Jean 1:1&nbsp; Jean  14:16</div>
+<div><span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; color: #03F;">2.Nous croyons que la Bible est La Parole inspirée et infaillible de  Dieu. Elle est la révélation de la pensée et de la volonté de Dieu, l&rsquo;autorité  suprême et finale sur la conduite de l&rsquo;homme. </span> II Timothée 3:15,16&nbsp; II Pierre 1:21&#13;</div>
+<div><span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; color: #03F;">3.Nous croyons que Jésus-Christ est vrai Dieu et vrai Homme, le Fils  de Dieu, conçu par le Saint-Esprit et né de la vierge Marie. Il a vécu sans  péché et a sauvé les hommes de leurs péchés par Sa mort sur la croix. Il a été  enseveli et Il est ressuscité des morts au troisième jour. Il est monté au ciel  et est assis à la droite de Dieu le Père.</span>
+I Corinthiens 15:3,4&nbsp; Hébreux 12:2 &#13;</div>
+<div><span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; color: #03F;">4.Nous croyons que l'Homme a été crée à l'image et à la ressemblance  de Dieu, mais a été destitué de cette position à cause de sa désobéissance.  Tout Homme a besoin d&rsquo;être réconcilié avec Dieu.</span>  Genèse 1:27&nbsp; Romains 3:23 &#13;</div>
+<div><span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; color: #03F;">5.Nous croyons que le salut de l&rsquo;Homme est une œuvre de la grâce de  Dieu, non pas un résultat des œuvres ou de la religion de l&rsquo;Homme. La  justification est imputée librement à tous ceux qui mettent leur Foi en Christ,  seul chemin, seul Nom par lequel nous pouvons être sauvés.</span>  Jean 14:6&nbsp;&nbsp; Actes  4:12&nbsp;&nbsp; Ephésiens&nbsp; 2:8 &#13;</div>
+<div><span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; color: #03F;">6.Nous croyons dans le baptême d&rsquo;eau par immersion, selon l&rsquo;exemple  de Christ. Le baptême est une ordonnance biblique, un commandement pour tous  ceux qui croient en Lui.</span>  Matthieu  28:19&nbsp; Marc 16:16&#13;</div>
+<div><span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; color: #03F;">7.Nous croyons aux sacrements bibliques, notamment au partage de la  Sainte Cène, en souvenir du sacrifice du corps et du sang de notre Seigneur  Jésus-Christ.</span>&nbsp;  I  Corinthiens 11:23-25&#13;</div>
+<div><span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; color: #03F;">8.Nous croyons au ministère du Saint-Esprit dans la vie du croyant,  pour convaincre, régénérer, guider, consoler. Nous croyons au ministère du  Saint-Esprit dans l&rsquo;Eglise, aux dons et aux manifestations de l&rsquo;Esprit, ainsi  qu&rsquo;au baptême du Saint-Esprit.</span>  Jean  14&nbsp;:16,17&nbsp; Actes 1:8&#13;</div>
+<div><span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; color: #03F;">9.Nous croyons que Jésus-Christ est la tête de l&rsquo;Eglise, qui est Son  Corps, l&rsquo;assemblée de tous ceux qui ont une Foi vivante au Fils de Dieu et qui  ont été régénérés par le Saint-Esprit. Dieu demande à chaque croyant d&rsquo;être un  membre actif et fidèle d&rsquo;une église locale.</span>   Actes 2:47 &#13;</div>
+<div><span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; color: #03F;">10.Nous croyons à la sanctification  personnelle du croyant, à la pureté de cœur, de pensée et de vie. </span>
+I Pierre 1:15,16&nbsp; Hébreux 12:14&#13;</div>
+<div><span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; color: #03F;">11.Nous croyons à la résurrection des morts,  au jugement et la vie éternelle pour ceux qui sont sauvés par leur foi en  Jésus-Christ.</span>  Apocalypse  20:12-15&nbsp; Matthieu&nbsp; 13:49,50&nbsp; Matthieu 25:46&nbsp; Romains 6:23&#13;</div>
+<span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; color: #03F;">Nous croyons au retour  physique et glorieux de notre Seigneur Jésus-Christ sur la terre. Son avènement  est l&rsquo;espérance de l&rsquo;Eglise, l&rsquo;accomplissement du plan éternel de Dieu.</span>  Actes 1&nbsp;:11&nbsp; Matthieu  24:27&nbsp;&nbsp; Jacques 5:8
+			
+					</g:HTMLPanel>
+				</g:VerticalPanel>
+			</g:Tab>
+
+		</g:DecoratedTabPanel>
+
+		<!-- <g:HorizontalPanel ui:field="menuPanel" styleName="{style.menuPanel}"> -->
+		<!-- <g:Button ui:field="saveButton" text="Saves" /> -->
+		<!-- <g:Button ui:field="cancelButton" text="Cancel" /> -->
+		<!-- </g:HorizontalPanel> -->
+
+	</g:HTMLPanel>
+	
+	
+</ui:UiBinder>

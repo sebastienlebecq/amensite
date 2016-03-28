@@ -1,0 +1,387 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	.textricharea {
+		background-color: #FFFFFF;
+	}
+	
+	.label {
+		font-weight: bold;
+	}
+	
+	.header {
+		font-size: 110%;
+		font-weight: bold;
+		color: #555
+	}
+	</ui:style>
+	<g:HTMLPanel>
+	<div id="private_container" align="left">
+		<table>
+			<tr>
+				<td colspan='2' align='center' class='{style.header}'>
+					<ui:msg key='accueilPrivateFormTitle'>Configuration de la page d'accueil:</ui:msg>
+					<br>
+					</br>
+				</td>
+			</tr>
+			</table>
+
+
+<table>
+
+			<tr>
+				<td class='{style.label}'>
+					<ui:msg key='logo3'>Référence(ID) de l'album Picasa défilant :</ui:msg>
+					<g:Button
+						title="(cet ID est obtenu après l'enregistrement des photos dans l'album du
+              'souvenir' déclaré avec une visibilité public dans l'app web Picasa/Google+ :
+              partager en mode public > lien, l'ID est la dernière séquence)
+              Par exemple, dans l'adresse 'https://plus.google.com/photos/109657393844365040393
+              /albums/5919355111611156769?banner=pwa' l'ID de l'album est : 5919355111611156769">?</g:Button>
+				</td>
+				<td>
+					<g:TextBox ui:field='photoDefilantBox' />
+				</td>
+			</tr>
+			
+			<tr>
+				<td class='{style.label}'>
+						<ui:msg key='logo4'>Nb de photos dans l'album défilant:</ui:msg>
+					</td>
+				<td>
+				<g:TextBox ui:field='dirphotoNbBox' />
+				</td>
+				
+			</tr>
+			
+		
+			<tr>
+				<td colspan='2'>
+					<g:HTMLPanel>
+						<g:FormPanel ui:field="docForm2">
+							<g:HTMLPanel ui:field="panelUpload2">
+							<br>
+									Uploader l'image de présentation (Page d'Accueil):
+								</br>
+								<br>
+									Blob Key:
+									<g:TextBox ui:field="blobKeyImg"></g:TextBox>
+									Image(jpg):
+									<g:FileUpload ui:field="uploadImg"></g:FileUpload>
+									<g:SubmitButton ui:field="btnSubmit2">Soumettre</g:SubmitButton>
+								</br>
+
+							</g:HTMLPanel>
+						</g:FormPanel>
+					</g:HTMLPanel>
+				</td>
+			</tr>
+			<tr>
+				<td class='{style.label}'>
+						<ui:msg key='logo5'>Largeur de l'image de présentation:</ui:msg>
+					</td>
+				<td>
+				<g:TextBox ui:field='imgPresWidthBox' />
+				</td>
+				
+			</tr>
+			<tr>
+				<td class='{style.label}'>
+					<ui:msg key='souvenirManagerFormDescription'>Présentation (à copier/coller depuis Word):</ui:msg>
+				</td>
+				<td>
+					<g:RichTextArea styleName="{style.textricharea}"
+						width="500px" height="200px" ui:field='descriptionBox' />
+				</td>
+			</tr>
+
+</table>
+</div>
+<br></br>
+<div id="private_container" align="left">
+		<table>
+			<tr>
+				<td colspan='2' align='center' class='{style.header}'>
+					<ui:msg key='accueilPrivateForm2Title'>Configuration du menu Nous contacter :</ui:msg>
+					<br>
+					</br>
+				</td>
+			</tr>
+
+			<tr>
+
+				<td colspan='2'>
+					<g:HTMLPanel>
+						<g:FormPanel ui:field="docForm4">
+							<g:HTMLPanel ui:field="panelUpload4">
+							<br>
+									Uploader l'image de présentation (page Nous Contacter):
+								</br>
+								<br>
+									Blob Key:
+									<g:TextBox ui:field="blobKeyImg4"></g:TextBox>
+									Image(jpg):
+									<g:FileUpload ui:field="uploadImg4"></g:FileUpload>
+									<g:SubmitButton ui:field="btnSubmit4">Soumettre</g:SubmitButton>
+								</br>
+
+							</g:HTMLPanel>
+						</g:FormPanel>
+					</g:HTMLPanel>
+				</td>
+			</tr>
+			
+			<tr>
+				<td class='{style.label}'>
+					<ui:msg key='accueilPrivateFormIdName'>Numéro</ui:msg>
+				</td>
+				<td>
+					<g:TextBox ui:field='idNumberBox' />
+				</td>
+			</tr>
+			<tr>
+				<td class='{style.label}'>
+					<ui:msg key='logo'>Référence(ID) de la photo de Batiment :</ui:msg>
+					<g:Button
+						title="(cet ID est obtenu après l'enregistrement des photos dans l'album du
+              'souvenir' déclaré avec une visibilité public dans l'app web Picasa/Google+ :
+              partager en mode public > lien, l'ID est la dernière séquence)
+              Par exemple, dans l'adresse 'https://plus.google.com/photos/109657393844365040393
+              /albums/5919355111611156769?banner=pwa' l'ID de l'album est : 5919355111611156769">?</g:Button>
+				</td>
+				<td>
+					<g:TextBox ui:field='photoBatimentBox' />
+				</td>
+			</tr>
+
+			<tr>
+				<td class='{style.label}'>
+					<ui:msg key='souvenirManagerFormEmail'>Emails:</ui:msg>
+				</td>
+				<td>
+					<g:RichTextArea styleName="{style.textricharea}"
+						width="500px" height="200px" ui:field='emailBox' />
+				</td>
+			</tr>
+
+			<tr>
+				<td class='{style.label}'>
+					<ui:msg key='souvenirManagerFormAdresse'>adresse:</ui:msg>
+				</td>
+				<td>
+					<g:RichTextArea styleName="{style.textricharea}"
+						width="500px" height="200px" ui:field='adresseBox' />
+				</td>
+			</tr>
+			<tr>
+				<td class='{style.label}'>
+					<ui:msg key='souvenirManagerFormIntegration'>Code à Intégrer:</ui:msg>
+					<g:Button
+						title=" Se rendre sur le site : http://maps.google.com/,
+						renseigner l'adresse de destination,
+						Cliquer sur le bouton 'Partager et intégrer la carte',
+						dans l'onglet 'Integrer la carte', copier/coller le code HTML">?</g:Button>
+				</td>
+				<td>
+					<g:TextArea width="500px" height="200px" ui:field='integrationBox' />
+				</td>
+			</tr>
+			</table>
+			</div>
+			<br></br>
+			<div id="private_container" align="left">
+					<table>
+			<tr>
+				<td colspan='2' align='center' class='{style.header}'>
+					<ui:msg key='accueilPrivateForm3Title'>Configuration de l'encart News :</ui:msg>
+					<br>
+					</br>
+				</td>
+			</tr>
+			</table>
+
+<table>
+			<tr>
+				<td class='{style.label}'>
+					<ui:msg key='souvenirManagerFormPreference'>News:</ui:msg>
+				</td>
+
+				<td>
+					  <table colspan='2'>
+						<tr>
+						<td>
+						<br>
+					...Des vidéos:<g:ListBox styleName="{style.textricharea}"
+							visibleItemCount="5" ui:field='preferenceVideoBox' />
+					<br>Sujet sélectionné :<g:HTML ui:field='appellationVideoHtml' /></br> 
+					</br>
+						</td>
+						</tr>
+						
+						<tr>
+						<td>
+						<br>...Des chansons:<g:ListBox styleName="{style.textricharea}"
+							visibleItemCount="5" ui:field='preferenceChansonBox' />
+					<br>Sujet sélectionné : <g:HTML ui:field='appellationChansonHtml' /></br></br>
+						</td>
+						</tr>
+						
+<!-- 						<tr> -->
+<!-- 						<td> -->
+<!-- 						<br>...Des Textes: -->
+<!-- 					<g:ListBox styleName="{style.textricharea}" -->
+<!-- 							visibleItemCount="5" ui:field='preferenceTexteBox' /> -->
+<!-- 					<g:HTML ui:field='appellationTexteHtml' /> -->
+<!-- 					</br> -->
+<!-- 						</td> -->
+<!-- 						</tr> -->
+							</table>
+					
+				</td>
+			</tr>
+			<tr>
+				<td colspan='3'>
+					<g:HTMLPanel>
+						<table>
+						<tr>
+						<td>
+						<g:HTMLPanel>
+							<br>
+								Actions sur News :
+							</br>
+							<br>
+								Url de l'objet:
+								<g:TextBox ui:field="PreferenceToAdd"></g:TextBox>
+								<g:Button ui:field="btnAddPreferenceVideo">Ajouter Video</g:Button>
+								<g:Button ui:field="btnAddPreferenceChanson">Ajouter Chanson</g:Button>
+<!-- 								<g:Button ui:field="btnAddPreferenceTexte">Ajouter Texte</g:Button> -->
+							</br>
+							<br>
+								<g:Button ui:field="btnRemovePreferenceVideo">Remove selected Video</g:Button>
+								<g:Button ui:field="btnRemovePreferenceChanson">Remove selected  Chanson</g:Button>
+<!-- 								<g:Button ui:field="btnRemovePreferenceTexte">Remove selected  Texte</g:Button> -->
+							</br>
+						</g:HTMLPanel>
+						</td>
+						</tr>
+							</table>
+					</g:HTMLPanel>
+				</td>
+			</tr>
+			</table>
+</div>
+<br></br>	
+<div id="private_container" align="left">
+					<table>
+			<tr>
+				<td colspan='2' align='center' class='{style.header}'>
+					<ui:msg key='accueilPrivateForm4Title'>Configuration du Téléchargement :</ui:msg>
+					<br>
+					</br>
+				</td>
+			</tr>
+			</table>
+						
+
+		<table>			
+			<tr>
+				<td class='{style.label}'>
+					<ui:msg key='souvenirManagerFormDownload'>Téléchargement :</ui:msg>
+				</td>
+
+				<td>
+					  <table colspan='2'>
+						<tr>
+						<td>
+						<br>
+					...Des Documents:<g:ListBox styleName="{style.textricharea}"
+							visibleItemCount="5" ui:field='prefDownloadBox' width="600px" />
+					<g:HTML ui:field='appellationDocumentHtml' />
+					</br>
+						</td>
+						</tr>
+						
+						<tr>
+						<td>
+						<br>...aux Adresse E-mail:<g:ListBox styleName="{style.textricharea}"
+							visibleItemCount="5" ui:field='prefEmailBox' />
+					<g:HTML ui:field='appellationEmailHtml' /></br>
+						</td>
+						</tr>
+						<tr>
+						<td>Avec la cle : <g:TextBox ui:field='idCleBox' /></td>
+						 </tr>
+						
+							</table>
+					
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan='3'>
+					<g:HTMLPanel>
+						<table>
+						<tr>
+						<td>
+						<g:HTMLPanel>
+
+							<br>
+								BlobKey or Email:
+								<g:TextBox ui:field="DocOrEmailName"></g:TextBox>
+								<g:Button ui:field="btnAddDownloadDoc">Ajouter Download</g:Button>
+								<g:Button ui:field="btnAddDownloadEmail">Ajouter Email</g:Button>
+						
+							</br>
+							<br>
+								<g:Button ui:field="btnRemoveDownloadDoc">Remove selected Download</g:Button>
+								<g:Button ui:field="btnRemoveDownloadEmail">Remove selected  Email</g:Button>
+							
+							</br>
+							
+						</g:HTMLPanel>
+						</td>
+						</tr>
+						
+						<tr>
+
+				<td colspan='2'>
+					<g:HTMLPanel>
+						<g:FormPanel ui:field="docForm3">
+							<g:HTMLPanel ui:field="panelUpload3">
+								
+									Blob Key:
+									<g:TextBox ui:field="blobKeydoc3"></g:TextBox>
+									Image(jpg):
+									<g:FileUpload ui:field="uploaddoc3"></g:FileUpload>
+									<g:SubmitButton ui:field="btnSubmit3">Soumettre</g:SubmitButton>
+								
+
+							</g:HTMLPanel>
+						</g:FormPanel>
+					</g:HTMLPanel>
+				</td>
+			</tr>
+				</table>
+					</g:HTMLPanel>
+				</td>
+			</tr>
+			</table>
+</div>			
+
+
+<div id="private_container" align="left">
+<table>
+			<tr>
+			
+				<td>
+					<g:Button styleName="{style.label}" ui:field="btnValid">Valider la configuration</g:Button>
+				</td>
+			</tr></table>
+			
+</div>
+		
+	</g:HTMLPanel>
+
+</ui:UiBinder>

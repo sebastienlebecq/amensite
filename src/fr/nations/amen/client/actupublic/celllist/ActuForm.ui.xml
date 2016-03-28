@@ -1,0 +1,86 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+   xmlns:d='urn:import:com.google.gwt.user.datepicker.client'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		.header {
+      font-size: 110%;
+      font-weight: bold;
+      color: #555
+    }
+    .label {
+      font-weight: bold;
+      width:80px;
+    }
+	</ui:style>
+	
+	  <g:DecoratorPanel>
+    <g:HTMLPanel>
+      <table>
+        <tr>
+          <td
+            colspan='2'
+            align='center'
+            class='{style.header}'>
+            <ui:msg
+              key='actuFormTitle'>Actualité</ui:msg>
+          </td>
+        </tr>
+        <tr>
+          <td
+            class='{style.label}'
+            >
+            <ui:msg
+              key='actuFormIdNumero'> Numéro:</ui:msg>
+          </td>
+          <td>
+            <g:HTML
+              ui:field='idNumeroBox' />
+          </td>
+        </tr>
+         <tr>
+          <td
+            class='{style.label}'>
+            <ui:msg
+              key='actuFormAppellation'>Sujet:</ui:msg>
+          </td>
+          <td>
+            <g:HTML
+              ui:field='appellationBox' />
+          </td>
+        </tr>
+            <tr>
+          <td
+            class='{style.label}'>
+            <ui:msg
+              key='actuFormDateActu'>Date:</ui:msg>
+          </td>
+          <td>
+            <g:HTML
+              ui:field='dateActuBox' />
+          </td>
+        </tr>
+                    <tr>
+          <td
+            class='{style.label}'
+            width="200px">
+            <ui:msg
+              key='actuFormDescription'>Texte:</ui:msg>
+          </td>
+          <td><g:ScrollPanel>
+            <g:HTML
+              ui:field='descriptionBox' />
+              </g:ScrollPanel>
+          </td>
+        </tr>
+        </table>
+        <br></br>
+<!--         		Hello, -->
+<!-- 		<g:Button styleName="{style.important}" ui:field="button" /> -->
+        
+        </g:HTMLPanel>
+        </g:DecoratorPanel>
+</ui:UiBinder> 

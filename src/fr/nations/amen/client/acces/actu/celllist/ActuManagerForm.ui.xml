@@ -1,0 +1,100 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+   xmlns:d='urn:import:com.google.gwt.user.datepicker.client'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		.header {
+      font-size: 110%;
+      font-weight: bold;
+      color: #555
+    }
+    .label {
+      font-weight: bold;
+    }
+    .textricharea {
+			background-color: #FFFFFF;
+		}
+	</ui:style>
+
+    <g:HTMLPanel>
+      <table>
+        <tr>
+          <td
+            colspan='2'
+            align='center'
+            class='{style.header}'>
+            <ui:msg
+              key='actuManagerFormTitle'>Actualité</ui:msg>
+          </td>
+        </tr>
+        <tr>
+          <td
+            class='{style.label}'>
+            <ui:msg
+              key='actuManagerFormIdName'>Numéro</ui:msg>
+          </td>
+          <td>
+            <g:TextBox
+              ui:field='idNumberBox' />
+          </td>
+        </tr>
+         <tr>
+          <td
+            class='{style.label}'>
+            <ui:msg
+              key='actuManagerFormAppellation'>Appellation:</ui:msg>
+          </td>
+          <td>
+            <g:TextBox
+              ui:field='appellationBox' />
+          </td>
+        </tr>
+            <tr>
+          <td
+            class='{style.label}'>
+            <ui:msg
+              key='actuManagerFormDateActu'>Date:</ui:msg>
+          </td>
+          <td>
+            <d:DateBox
+              ui:field='dateActuBox' />
+          </td>
+        </tr>
+                    <tr>
+          <td
+            class='{style.label}'>
+            <ui:msg
+              key='actuManagerFormDescription'>Description:</ui:msg>
+          </td>
+          <td>
+            <g:RichTextArea styleName="{style.textricharea}"
+						width="500px" height="200px" ui:field='descriptionBox' />
+          </td>
+        </tr>
+        </table>
+		<hr>
+		</hr>
+		 <table>
+        <tr>
+          <td
+            colspan='2'
+            align='center'
+            class='{style.header}'>
+            <ui:msg
+              key='actuManagerFormTitle2'>Actions dont vous disposez :</ui:msg>
+          </td>        
+          </tr>
+          
+          <tr>
+          <td><g:Button styleName="{style.important}" ui:field="btnAdd">Ajouter</g:Button></td>
+          <td><g:Button styleName="{style.important}" ui:field="btnRemove">Effacer</g:Button></td>
+          <td><g:Button styleName="{style.important}" ui:field="btnUpdate">Mise-à-jour</g:Button></td>
+          </tr>
+        </table>
+		
+        </g:HTMLPanel>
+
+</ui:UiBinder> 

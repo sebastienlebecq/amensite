@@ -1,0 +1,2 @@
+serviceClass: fr.nations.amen.client.acces.LoginService
+path: 350A595E769F0F52C7AAB8FA664C77BF.gwt.rpc

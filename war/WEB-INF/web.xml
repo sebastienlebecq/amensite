@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+<context-param>
+    <!-- max size of the upload request -->
+    <param-name>maxSize</param-name>
+    <param-value>3145728</param-value>
+  </context-param>
+  <context-param>
+    <!-- Useful in development mode to slow down the uploads in fast networks.
+         Put the number of milliseconds to sleep in each block received in the server.
+         false or 0, means don't use slow uploads  -->
+    <param-name>slowUploads</param-name>
+    <param-value>200</param-value>
+  </context-param>
+
+  <!-- Servlets -->
+<!--     <servlet> -->
+<!--     <servlet-name>indexForum</servlet-name> -->
+<!--     <servlet-class>fr.nations.amen.server.MessagesAmenServlet</servlet-class> -->
+<!--   </servlet> -->
+<!--     <servlet-mapping> -->
+<!--     <servlet-name>indexForum</servlet-name> -->
+<!--     <url-pattern>/indexForum</url-pattern> -->
+<!--   </servlet-mapping> -->
+  <!-- Default page to serve -->
+  <servlet>
+    <servlet-name>uploadServlet</servlet-name>
+    <!-- This is the default servlet, it puts files in session -->
+    <servlet-class>gwtupload.server.UploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>uploadServlet</servlet-name>
+    <url-pattern>*.gupld</url-pattern>
+  </servlet-mapping>
+	
+	
+
+<!-- 	<servlet> -->
+<!-- 		<servlet-name>SearchVideoServlet</servlet-name> -->
+<!-- 		<servlet-class>fr.nations.amen.server.searchvideo.SearchVideoServiceImpl</servlet-class> -->
+<!-- 	</servlet> -->
+
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>SearchVideoServlet</servlet-name> -->
+<!-- 		<url-pattern>/amen/serviceSearchVideo</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+
+
+<servlet>
+		<servlet-name>configServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.conf.ConfigServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>configServlet</servlet-name>
+		<url-pattern>/amen/serviceConfig</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>actuServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.actus.ActualitesServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>actuServlet</servlet-name>
+		<url-pattern>/amen/serviceActu</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetMessageuploadedServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.messagesaudio.GetMessageAudioUploadedServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetMessageuploadedServlet</servlet-name>
+		<url-pattern>/amen/getMessageAudioUploaded</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>upload2Servlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.messagesaudio.UploadServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>upload2Servlet</servlet-name>
+		<url-pattern>/amen/upload</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>uploadDocServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.conf.UploadDocServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>uploadDocServlet</servlet-name>
+		<url-pattern>/amen/uploadDoc</url-pattern>
+	</servlet-mapping>
+	
+			<servlet>
+		<servlet-name>getuploadDocServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.conf.GetDocUploadedServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>getuploadDocServlet</servlet-name>
+		<url-pattern>/amen/getDownloaduploadDoc</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>uploadImgServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.louanges.UploadImgServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>uploadImgServlet</servlet-name>
+		<url-pattern>/amen/uploadImg</url-pattern>
+	</servlet-mapping>
+
+		<servlet>
+		<servlet-name>getuploadSouvenirImgServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.souvenirs.GetImgUploadedServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>getuploadSouvenirImgServlet</servlet-name>
+		<url-pattern>/amen/getSouveniruploadImg</url-pattern>
+	</servlet-mapping>
+
+		<servlet>
+		<servlet-name>uploadSouvenirImgServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.souvenirs.UploadImgServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>uploadSouvenirImgServlet</servlet-name>
+		<url-pattern>/amen/uploadSouvenirImg</url-pattern>
+	</servlet-mapping>
+
+		<servlet>
+		<servlet-name>getuploadImgServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.louanges.GetLouangeImgUploadedServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>getuploadImgServlet</servlet-name>
+		<url-pattern>/amen/getlouangeuploadImg</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>souvenirServlete</servlet-name>
+		<servlet-class>fr.nations.amen.server.souvenirs.SouvenirsServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>souvenirServlete</servlet-name>
+		<url-pattern>/amen/serviceSouvenir</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>forumEgliseServlete</servlet-name>
+		<servlet-class>fr.nations.amen.server.forumeglise.ForumEgliseServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>forumEgliseServlete</servlet-name>
+		<url-pattern>/amen/serviceForumEglise</url-pattern>
+	</servlet-mapping>
+	
+	
+		<servlet>
+		<servlet-name>MessagesAudioServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.messagesaudio.MessagesAudioServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MessagesAudioServlet</servlet-name>
+		<url-pattern>/amen/serviceMessageAudio</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LouangesServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.louanges.LouangesServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LouangesServlet</servlet-name>
+		<url-pattern>/amen/serviceLouanges</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>mEgliseServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.eglise.MenuEgliseServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>mEgliseServlet</servlet-name>
+		<url-pattern>/amen/serviceEglise</url-pattern>
+	</servlet-mapping>
+	
+	
+		<servlet>
+		<servlet-name>TemoignageServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.temoignages.TemoignagesServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>TemoignageServlet</servlet-name>
+		<url-pattern>/amen/serviceTemoignage</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>amenAuthServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.actus.LoginServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>amenAuthServlet</servlet-name>
+		<url-pattern>/amen/login</url-pattern>
+	</servlet-mapping>
+
+<!-- 	<servlet> -->
+<!-- 		<servlet-name>forumpasteurServlet</servlet-name> -->
+<!-- 		<servlet-class>fr.nations.amen.server.forumpasteur.ForumPasteurServiceImpl</servlet-class> -->
+<!-- 	</servlet> -->
+
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>forumpasteurServlet</servlet-name> -->
+<!-- 		<url-pattern>/amen/servicefp</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+	
+	
+	
+	
+	<servlet>
+		<servlet-name>initCounterServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.souvenirs.InitCounter</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>initCounterServlet</servlet-name>
+		<url-pattern>/amen/init</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>likeServlet</servlet-name>
+		<servlet-class>fr.nations.amen.server.LikeServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>likeServlet</servlet-name>
+		<url-pattern>/amen/like</url-pattern>
+	</servlet-mapping>
+	
+<!-- <security-constraint> -->
+<!--         <web-resource-collection> -->
+<!--             <url-pattern> -->
+<!--             /admin/* -->
+<!--             </url-pattern> -->
+<!--         </web-resource-collection> -->
+<!--         <auth-constraint> -->
+<!--             <role-name>admin</role-name> -->
+<!--         </auth-constraint> -->
+<!--     </security-constraint> -->
+
+  <welcome-file-list>
+    <welcome-file>Amen.html</welcome-file>
+  </welcome-file-list>
+</web-app>

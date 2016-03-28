@@ -1,0 +1,93 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:com.google.gwt.user.cellview.client"
+	xmlns:s="urn:import:fr.nations.amen.client.messagesaudiopublic.celllist">
+
+	<ui:style>
+		.cellStyle {
+			border: 1px solid;
+			padding: 3px;
+			width: 300px;
+		}
+		
+		.image {
+			width: 100px;
+			height: 150px;
+		}
+		
+		.anchor {
+			color: blue;
+			text-decoration: underline;
+		}
+		
+		.title {
+			font-size: 10pt;
+		}
+		
+		.eastPanel {
+			background-color: #F60;
+		}
+		
+		.westPanel {
+			background-color: #EEE;
+		}
+		
+		.northPanel {
+			bachground-color: #E0FFFF;
+			margin-left: auto;
+  			margin-right: auto;
+  			wdth:100px;
+		}
+		
+		.southPanel {
+			background-color: #99C;
+		}
+		
+		.centerPanel {
+			background-color: #FFC;
+		}
+		
+		.full {
+			width: 100%;
+			height: 100%;
+		}
+	</ui:style>
+
+	<g:SplitLayoutPanel>
+
+		<g:north size='30' unit='EM'>
+		<g:HorizontalPanel styleName="{style.northPanel}">
+		<g:HTML >
+		<b>Catégorie des Messages Audio :</b>
+		</g:HTML>
+		<g:ListBox ui:field="categories"></g:ListBox>
+		</g:HorizontalPanel> 
+		</g:north>
+
+		<g:west size='200' unit='EM'>
+ 			<g:CustomScrollPanel> 
+				<g:FlowPanel>
+					<c:CellList ui:field="souvenirCells"></c:CellList>
+					<c:PageSizePager ui:field="pagerShowMore"
+						increment="12"></c:PageSizePager>
+						<c:SimplePager ui:field="pager" location="CENTER"></c:SimplePager>
+					<!-- <c:SimplePager ui:field="pager" location="CENTER"></c:SimplePager> -->
+				</g:FlowPanel>
+ 			</g:CustomScrollPanel>
+		</g:west>
+
+		<g:center size='200' unit='EM'>
+
+		<s:MessageAudioManagerForm ui:field='souvenirManagerForm' />
+
+		</g:center>
+		
+<!-- 		<g:east size="20" unit='EM'> -->
+<!-- 		<g:HTML></g:HTML> -->
+<!-- 		</g:east> -->
+
+
+	</g:SplitLayoutPanel>
+
+
+
+</ui:UiBinder>

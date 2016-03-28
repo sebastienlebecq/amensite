@@ -1,0 +1,65 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:style>	
+	</ui:style>
+
+	<g:MenuBar>
+	<g:MenuItem ui:field="welcome">Accueil</g:MenuItem>
+		<g:MenuItem ui:field="eglise">
+			L'église
+<!-- 			<g:MenuBar vertical="true"> -->		
+<!-- 			<g:MenuItem ui:field="quisommesnous">Qui sommes-nous?</g:MenuItem> -->
+<!-- 			<g:MenuItem ui:field="historique">Notre Histoire</g:MenuItem> -->
+<!-- 			<g:MenuItem ui:field="vision">Notre Vision</g:MenuItem> -->
+<!-- 			<g:MenuItem ui:field="organisation">L'organisation</g:MenuItem> -->
+<!-- 			<g:MenuItem ui:field="croyance">Ce en quoi nous croyons</g:MenuItem> -->
+<!-- 			<g:MenuItem ui:field="forumPasteur">Le Forum du Pasteur</g:MenuItem> -->
+<!-- 			</g:MenuBar> -->
+ 		</g:MenuItem> 
+		<g:MenuItem>
+			Nos Ressources
+			<g:MenuBar vertical="true">
+				<g:MenuItem ui:field="souvenirs">Messages vidéos
+				</g:MenuItem>
+				<g:MenuItem ui:field="temoignages">Messages écrits
+				</g:MenuItem>
+<!-- 				<g:MenuItem ui:field="messagesaudio">Messages Audios -->
+<!-- 				</g:MenuItem> -->
+				<g:MenuItem ui:field="louanges">Messages chantés
+				</g:MenuItem>
+				<g:MenuItem ui:field="appAndroid">Notre Application Android</g:MenuItem>
+				<g:MenuItem ui:field="acces">Administration</g:MenuItem>
+				<g:MenuItem ui:field="download">Téléchargement</g:MenuItem>
+				<!-- <g:MenuItem ui:field="rechForum">dans les forums...</g:MenuItem> -->
+				<!-- <g:MenuItem ui:field="rechLouange">dans les louanges...</g:MenuItem> -->
+			</g:MenuBar>
+		</g:MenuItem>
+<!-- 		<g:MenuItem> -->
+<!-- 			<b>Notre Actualité</b> -->
+<!-- 			<g:MenuBar vertical="true"> -->
+<!-- 				<g:MenuItem ui:field="events">Nos Rendez-vous</g:MenuItem> -->
+				
+<!-- 				<g:MenuItem ui:field="appAndroid">Notre Application Android</g:MenuItem> -->
+<!-- 				<g:MenuItem ui:field="acces">Accès a Mon Compte</g:MenuItem> -->
+<!-- 			</g:MenuBar> -->
+<!-- 			</g:MenuItem> -->
+			
+			<g:MenuItem ui:field="where">Nous contacter</g:MenuItem>
+			<g:MenuItem ui:field="forumEglise">Forum</g:MenuItem>
+<!-- 			<g:MenuItem> -->
+<!-- 				<b>Notre Vision</b> -->
+<!-- 				<g:MenuBar vertical="true"> -->
+<!-- 					<g:MenuItem ui:field="vision">Notre Vision</g:MenuItem> -->
+<!-- 				</g:MenuBar> -->
+<!-- 			</g:MenuItem> -->
+<!-- 			<g:MenuItem> -->
+<!-- 				<b>Notre Confession de Foi</b> -->
+<!-- 				<g:MenuBar vertical="true"> -->
+<!-- 					<g:MenuItem ui:field="historique">Notre Confession de Foi -->
+<!-- 					</g:MenuItem> -->
+<!-- 				</g:MenuBar> -->
+<!-- 			</g:MenuItem> -->
+
+	</g:MenuBar>
+</ui:UiBinder>

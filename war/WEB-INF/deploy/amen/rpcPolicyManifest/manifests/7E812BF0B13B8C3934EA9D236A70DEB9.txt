@@ -1,0 +1,2 @@
+serviceClass: fr.nations.amen.shared.louanges.LouangesService
+path: DB9350DE9283445FE0E63D59331BFA04.gwt.rpc

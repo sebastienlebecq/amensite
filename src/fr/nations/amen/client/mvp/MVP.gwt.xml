@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>    
+ <inherits name="com.google.gwt.core.Core" />
+<replace-with class="fr.nations.amen.client.mvp.ClientFactoryImpl">
+    <when-type-is class="fr.nations.amen.client.mvp.ClientFactory"/>
+ </replace-with>
+<inherits name="com.google.gwt.activity.Activity" />
+    <inherits name="com.google.gwt.place.Place" />
+</module>

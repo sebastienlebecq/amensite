@@ -1,0 +1,18 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'>
+
+<ui:with field='appellation' type='java.lang.String'/>
+<!-- <ui:with field='img' type='java.lang.String'/> -->
+<ui:with field='date' type='java.lang.String'/>
+
+
+<table ui:field='theCell'>
+        <tr height="40px">
+
+                <td><ui:text from='{appellation}'/></td>
+        </tr>
+        <tr>
+                <td>Ayant lieu le: <ui:text from='{date}'/></td>
+        </tr>
+            <hr style="width:200px; color:black; background-color:black; height:2px;" />
+</table>
+</ui:UiBinder>

@@ -1,0 +1,31 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+	ui:generateLocales="default" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:my="urn:import:fr.nations.amen.client.mvp.ui" 
+	xmlns:s="urn:import:fr.nations.amen.client.acces.actu.celllist"
+	xmlns:a="urn:import:fr.nations.amen.client">
+
+	<ui:style>
+		.panel {
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+		}
+	</ui:style>
+
+	<g:DockLayoutPanel unit="PX" addStyleNames="{style.panel}">
+<!-- 		<g:north size="0"> -->
+<!-- 			<g:FlowPanel> -->
+<!-- 				<a:LogosView></a:LogosView> -->
+<!-- 				<my:AppMenuBar></my:AppMenuBar> -->
+<!-- 			</g:FlowPanel> -->
+<!-- 		</g:north> -->
+		<g:center>
+			<g:FlowPanel addStyleNames="{style.panel}">
+				<s:CellListActuManager ui:field="cellListActuManager" />
+			</g:FlowPanel>
+		</g:center>
+	</g:DockLayoutPanel>
+
+</ui:UiBinder>

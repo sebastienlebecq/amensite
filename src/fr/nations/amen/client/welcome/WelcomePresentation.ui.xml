@@ -1,0 +1,68 @@
+ <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:with type="fr.nations.amen.client.welcome.WelcomePresentation.Resources"
+		field="resources" />
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<!-- <g:CustomScrollPanel> -->
+		<g:DockLayoutPanel unit="PX" width="450px" height="450px">
+			<g:north size="1">
+				<g:SimplePanel>
+					<g:HTMLPanel>
+						 
+							
+						
+					</g:HTMLPanel>
+				</g:SimplePanel>
+			</g:north>
+			<g:west size="500">
+				<g:SimplePanel>
+				<g:FlowPanel>
+			
+				<g:HTML height="10" ui:field="visiteurLabel" styleName="important" />
+				
+					<g:HTMLPanel width="450px" height="700px" styleName="presentation">
+						<g:HorizontalPanel height="400px">
+							<g:Image resource="{resources.logoColomb}" width="250px"
+								height="370px" />
+							<g:HTML width="5px"></g:HTML>
+							<g:HTML width="180px" height="300px" horizontalAlignment="ALIGN_CENTER">
+								<div id="lypsum">
+
+
+									<p>
+										Ce site d'inspiration divine présente les talents d'Amen.
+										Il est un moyen d'annoncer la bonne nouvelle, l'Amour de Dieu.
+									</p>
+									<p>
+										Il dresse les activités d'Amen et vous montre combien
+										l'Amour de Dieu touche chacun de nous si l'on accepte son Amour.
+									</p>
+									<p>
+										Venez apposer vos commentaires après avoir vu et entendu nos
+										louanges:
+										Avec régularité, nous le remercions pour les bonnes grâces
+										qu'il nous permet de recevoir et d'accomplir.
+									</p>
+									<p>Soyez Bénis</p>
+								</div>
+							</g:HTML>
+						</g:HorizontalPanel>
+					</g:HTMLPanel>
+					</g:FlowPanel>
+				</g:SimplePanel>
+			</g:west>
+
+		</g:DockLayoutPanel>
+
+		<!-- </g:CustomScrollPanel> -->
+
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

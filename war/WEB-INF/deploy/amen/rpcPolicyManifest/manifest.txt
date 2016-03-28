@@ -1,0 +1,9 @@
+# Module amen
+# RPC service class, partial path of RPC policy file
+fr.nations.amen.shared.souvenirs.SouvenirsService, A5402079F8D5A79C3909E10999CBE413.gwt.rpc
+fr.nations.amen.client.acces.LoginService, 350A595E769F0F52C7AAB8FA664C77BF.gwt.rpc
+fr.nations.amen.shared.forumeglise.ForumEgliseService, 9A61D45D5DB0A3C27BAEAF2CA262A0B6.gwt.rpc
+fr.nations.amen.shared.eglise.MenuEgliseService, 17F9780F4CF7050E9BCEF236C8614398.gwt.rpc
+fr.nations.amen.shared.louanges.LouangesService, DB9350DE9283445FE0E63D59331BFA04.gwt.rpc
+fr.nations.amen.shared.conf.ConfigService, A8CDE880CC85A664D96982ECC922F2BC.gwt.rpc
+fr.nations.amen.shared.temoignages.TemoignagesService, 75741067EC933755ED2F46E4F561908B.gwt.rpc

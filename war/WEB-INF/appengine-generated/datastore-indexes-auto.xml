@@ -1,0 +1,11 @@
+<!-- Indices written at Mon, 21 Mar 2016 09:59:15 CET -->
+
+<datastore-indexes>
+
+    <!-- Used 12 times in query history -->
+    <datastore-index kind="PageEntry" ancestor="false" source="auto">
+        <property name="gpSouvenir" direction="asc"/>
+        <property name="hireDate" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>

@@ -1,0 +1,39 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	.important {
+		font-weight: bold;
+	}
+	</ui:style>
+	<g:DockLayoutPanel unit="EM" width="300px" height="600px">
+		<g:north size="2.2">
+			<g:Label>Clique sur le bouton de ton choix :</g:Label>
+		</g:north>
+		<g:west size="3.2">
+			<g:SimplePanel />
+		</g:west>
+		<g:east size="3.2">
+			<g:SimplePanel />
+		</g:east>
+		<g:center>
+		<g:HTMLPanel>
+		<table >
+		<tr><td width="250"><g:Button ui:field="btnAccueil">Configuration du site</g:Button></td></tr>
+		<tr><td width="250"><g:Button  ui:field="btnMenuEglise">Gestion du menu de l'Eglise</g:Button></td></tr>
+		<tr><td width="250"><g:Button ui:field="btnCellTemoignages">Gestion des Messages Textes</g:Button></td></tr>
+		<tr><td width="250"><g:Button ui:field="btnCellSouvenirs">Gestion des Messages Videos</g:Button></td></tr>
+		<tr><td width="250"><g:Button ui:field="btnLouanges">Gestion des Messages Chantés</g:Button></td></tr>
+		<tr><td width="250"><g:Button ui:field="btnForumEglise">Gestion du Forum de l'Eglise</g:Button></td></tr>
+		
+		
+					<!-- <g:Button ui: width="200"field="btnCellForumPasteur">Gestion du Forum du Pasteur</g:Button> -->
+<!-- 					<tr><td><g:Button ui:field="btnMessagesAudio">Gestion des Messages Audio</g:Button> -->
+					<!-- <g:Button ui:field="btnVideoSearch">Gestion des vidéos à rechercher</g:Button> -->
+					<!-- <g:Button ui:field="btnForumSearch">Gestion des Forum à rechercher</g:Button> -->
+		</table>
+		</g:HTMLPanel>
+		</g:center>
+	</g:DockLayoutPanel>
+
+</ui:UiBinder> 
