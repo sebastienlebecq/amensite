@@ -7,6 +7,7 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/gwt-ajaxloader-1.1.0.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/gwt-user.jar"/>
+	<classpathentry kind="lib" path="gwtbootstrap3-0.9.3.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_67">
 		<attributes>
 			<attribute name="owner.project.facets" value="java"/>

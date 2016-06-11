@@ -1,0 +1,5 @@
+TODO :
+
+- enlever les tables et les déporter dans une autre page
+- boolean visible pour les chnasons, afin de cacher celles qui n'ont pas été filmées
+ok : - intégration de boostrap gwt GWT Bootstrap » 2.3.2.0 : http://gwtbootstrap.github.io/
