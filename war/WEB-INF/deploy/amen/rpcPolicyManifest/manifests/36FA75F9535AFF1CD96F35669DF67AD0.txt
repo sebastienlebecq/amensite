@@ -1,2 +1,0 @@
-serviceClass: fr.nations.amen.shared.forumeglise.ForumEgliseService
-path: 9A61D45D5DB0A3C27BAEAF2CA262A0B6.gwt.rpc

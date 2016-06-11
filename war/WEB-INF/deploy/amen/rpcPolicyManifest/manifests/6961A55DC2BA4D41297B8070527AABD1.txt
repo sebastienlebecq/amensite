@@ -1,2 +1,0 @@
-serviceClass: fr.nations.amen.shared.eglise.MenuEgliseService
-path: 17F9780F4CF7050E9BCEF236C8614398.gwt.rpc
